@@ -1,0 +1,34 @@
+---
+title: دانشنامه و راهنمای لینوکس
+description: مرجع تخصصی آموزش، توزیع‌ها و ترفندهای لینوکس برای کاربران فارسی‌زبان
+template: splash
+hero:
+  tagline: مرجع آزاد و تخصصی آموزش سیستم‌عامل‌های گنو/لینوکس، ترفندها و بهینه‌سازی سیستم.
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: شروع یادگیری
+      link: /guides/about/
+      icon: right-arrow
+      variant: primary
+    - text: مشاهده کدهای پروژه در گیت‌هاب
+      link: https://github.com
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+  <Card title="راهنمای نصب و راه‌اندازی" icon="laptop">
+    آموزش گام‌به‌گام پارتیشن‌بندی، نصب توزیع‌های مختلف و تنظیم بوت‌لودر.
+  </Card>
+  <Card title="بهینه‌سازی و ترفندها" icon="setting">
+    مدیریت رم با ZRAM، کانفیگ ساب‌والیوم‌های Btrfs و افزایش سرعت سیستم.
+  </Card>
+  <Card title="معرفی توزیع‌ها" icon="document">
+    بررسی تخصصی توزیع‌های آرچ، دبیان، فدورا و مشتقات آن‌ها.
+  </Card>
+  <Card title="جامعه متن‌باز فارسی" icon="open-book">
+    اشتراک‌گذاری دانش و راه حل خطاهای رایج ترمینال.
+  </Card>
+</CardGrid>
