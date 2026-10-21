@@ -3,6 +3,7 @@ import starlight from '@astrojs/starlight';
 
 export default defineConfig({
   site: 'https://linux-wiki.pages.dev',
+  output: 'static',
   integrations: [
     starlight({
       title: 'دانشنامه لینوکس',
@@ -25,7 +26,7 @@ export default defineConfig({
             { label: 'راهنمای نصب لینوکس', slug: 'guides/installation' },
           ],
         },
-        {
+        { 
           label: 'ترفندها و بهینه‌سازی',
           items: [
             { autogenerate: { directory: 'tips' } },
@@ -33,8 +34,9 @@ export default defineConfig({
         },
       ],
       social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com' },
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/Alefbimedad/Farsilinux-wiki' },
       ],
     }),
   ],
 });
+
